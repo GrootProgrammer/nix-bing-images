@@ -12,18 +12,20 @@ def map_entries_with_image_hash(entries: List[Dict], urlhash: Dict) -> List[Dict
       - hash: SHA-256 hash of the fetched image
     """
     result = []
-
+    cached_num = 0
+    new_num = 0
     for i, entry in enumerate(entries):
         image_url = entry["url"]
         if image_url in urlhash:
             image_hash = urlhash[image_url]
+            cached_num = cached_num + 1
         else:
             response = requests.get(image_url)
             response.raise_for_status()
 
             image_bytes = response.content
             image_hash = hashlib.sha256(image_bytes).hexdigest()
-            print(float(i*100) / len(entries))
+            new_num = new_num + 1
 
         if entry["title"] is None or entry["title"] == "null":
             continue
@@ -38,6 +40,8 @@ def map_entries_with_image_hash(entries: List[Dict], urlhash: Dict) -> List[Dict
             "url": image_url,
             "hash": image_hash,
         })
+
+    print(f"cached: {cached_num}, new: {new_num}")
 
     return result
 
