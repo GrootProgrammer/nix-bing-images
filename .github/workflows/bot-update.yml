@@ -10,9 +10,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/checkout@v6
 
       - name: Make changes
         run: |
@@ -28,4 +26,3 @@ jobs:
           git commit -m "Automated update" || echo "No changes to commit"
 
           git push
-
