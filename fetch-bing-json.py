@@ -41,7 +41,7 @@ def map_entries_with_image_hash(entries: List[Dict], urlhash: Dict) -> List[Dict
 
     return result
 
-with urllib.request.urlopen("https://bing.npanuhin.me/ROW/en.json") as response:
+with urllib.request.urlopen("https://raw.githubusercontent.com/npanuhin/Bing-Wallpaper-Archive/refs/heads/master/api/ROW/en.json") as response:
     entries = json.load(response)
 with open("wallpapers-with-hash.json", 'r') as f:
     cached = json.load(f)
