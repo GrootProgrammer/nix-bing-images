@@ -16,6 +16,7 @@ jobs:
 
       - name: Make changes
         run: |
+          pip install requests
           python fetch-bing-json.py
 
       - name: Commit changes
