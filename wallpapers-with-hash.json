@@ -1,17 +1,5 @@
 [
   {
-    "title": "Kilchurn Castle reflecting in Loch Awe, Argyll and Bute, Scotland",
-    "date": "2024-01-01",
-    "url": "https://bing.npanuhin.me/ROW/en/2024-01-01.jpg",
-    "hash": "e97195843dec194de7a1acf8e15c7b49e1bce017d02a51212a60120645aaf782"
-  },
-  {
-    "title": "Fireworks over Parliament Hill, Ottawa, Canada",
-    "date": "2024-01-02",
-    "url": "https://bing.npanuhin.me/ROW/en/2024-01-02.jpg",
-    "hash": "493f95e8447ef2e63f0fa5d981b2b8a9dd438ebf79758a38bab638179aebdf6d"
-  },
-  {
     "title": "Beech trees and wild anemones, Jutland, Denmark",
     "date": "2024-04-02",
     "url": "https://bing.npanuhin.me/ROW/en/2024-04-02.jpg",
@@ -5092,5 +5080,11 @@
     "date": "2026-08-02",
     "url": "https://bing.npanuhin.me/ROW/en/2026-08-02.jpg",
     "hash": "a16dc20dfd95eee00ddac0781eaecb46dbc57b4da70194b32e17d5950bca6148"
+  },
+  {
+    "title": "Colourful boats in Marsaxlokk Harbour, Malta",
+    "date": "2026-08-03",
+    "url": "https://bing.npanuhin.me/ROW/en/2026-08-03.jpg",
+    "hash": "1085c8536a5e40e700efb18e5e01773848beef671d75f5e397b079dcfc4b23dd"
   }
 ]
